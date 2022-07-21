@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    overflow-x: hidden;  
+    scroll-behavior: smooth;
+    background-color: var(--white);
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--gray);
+}
+::-webkit-scrollbar{
+    height: 8px;
+    width: 5px;
+}
+  
+
+:root{
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black:black;
+    --lightgrey:lightgrey;
+    --lightred:rgb(204, 22, 22);
+    --red:red;
+    --amzblue:rgb(33, 57, 65);
+    --orange:orange;
+    --gray:gray;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 2px;
+    z-index:1;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    height: 60px;
+    background-color: var(--white);
+}
+
+.logo-name{
+    position :absolute;
+    float: left;
+    color: var(--black);
+    bottom: 100;
+    width: 209px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid lightgrey;
+    font-weight: 800;
+    padding: 12px;
+    font-size: 24px;
+}
+#selectlocation{
+    background-color:#F5F7FA ;
+    color: var(--black);
+    padding: 9px 0px;
+    text-align: left;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 155px;
+    outline: none;
+    cursor: pointer;
+    height: 35.5px;
+    position: relative;
+    left: 222px;
+    top: 12px;
+}
+#selectlocation:hover{
+    background-color: rgb(243, 242, 242);
+}
+.box{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    color: var(--black);
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input {
+    padding: 10px;
+    width: 455px;
+    height: 36px;
+    position: relative;
+    background-color: var(--white);
+    border: 1px solid gray;
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: var(--black);
+    border-radius: 5px;
+    outline: none;
+    transition: .5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}  
+#searchbtn{
+    position: absolute;
+    width: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 1px;
+    color: black;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0px;
+    text-align: center;
+    background-image: linear-gradient(to right,  orange,gold);
+    left: 405px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} 
+#searchbtn:hover{
+    background-image: linear-gradient(to right,  #FFD729, #FFD729);
+    background-color: white;
+}
+input:hover{
+    border: 1px solid orange;
+   
+}
+.fa-search{
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    right: 18px;
+}
+input::placeholder{
+    position: relative;
+    bottom: 2px;
+    left: 3px;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.box:hover input::placeholder{
+    color: var(--black);
+}
+.Profile{
+    position: absolute;
+    top: 0px;
+    left: 840px;
+}
+.profileimg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+}
+.sidebaritems{
+    margin-top: 50px;  
+}
+.sidebar{
+    flex-basis: 15%;
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-right: 1px solid lightgrey;
+    background-color: #F4F4F4 ;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.sidebar a, .dropdown-btn {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--amzblue);
+    font-weight: 600;
+    margin: 1px 5px;
+    display: block;
+    border: none;
+    font-family: 'poppins';
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+  /* On mouse-over */
+.sidebar a:hover, .dropdown-btn:hover {
+    color: var(--blue);
+    width:100%;
+    height: 100%;
+    
+}
+   
+/* Dropdown container (hidden by default). Optional: add a 
+lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: gray;
+    padding-left: 2px;
+    
+}
+.dropdown-container a{
+      color: #ffffff;
+      font-size: 11px;
+}
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 20px ;
+    font-size: 13px;
+    position: relative;
+    top: 16px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.material-symbols-outlined{
+      position: relative;
+      top: 7px;
+      padding: 4px;
+      margin-right: 6px;
+      border-radius: 50%;
+      width: 32px;
+      text-align: center;
+      height: 32px;
+}
+.right{
+    flex-basis: 85%;
+    margin-left: 200px;
+    padding-left: 20px;
+    background-color:#F5F7FA ;
+}
+.pageheading{
+    border-bottom: 1px solid rgb(211, 211, 211);
+    height: 40px;
+    margin-top: 60px;
+}
+.Titlehead{
+    font-size: 25px;
+    padding: 5px ;
+    font-family: 'poppins';
+}
+.overview{
+    width: 100%;
+    height: 145px;
+    padding: 0;
+    margin: 10px 0;
+    margin-top: 5px;
+    left: 0;
+}
+.fivecontainer{
+    display: flex;
+}
+.boxone{
+    height: 130px;
+    width: 270px;
+    border-radius: 7px;
+    margin: 5px auto;
+    text-align: center;   
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.one{
+    background-image: linear-gradient(to right,  orange,gold);
+}
+.two{
+    background-image:  linear-gradient(#FEB692, #EA5455);
+}
+.three{
+   
+    background-image: linear-gradient(to right,  #ABDCFF, #0396FF);
+}
+.four{
+    background-image: linear-gradient(to right,  #81FBB8,#28C76F);
+}
+
+.imagetext{
+    display: flex;
+}
+.imagetext > .material-symbols-outlined{
+    position: relative;
+    color: white;
+
+    border-radius: 5px;
+    width: 38px;
+    left: 20px;
+    font-size: 30px;
+   height: 40px;
+}
+.spantext{
+    position:relative;
+    left: 30px;
+    top: 18px;
+    font-size: 16px;
+font-family: 'Helvetica Neue', sans-serif;
+}
+.orderinf{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    right: 35px;
+
+}
+.odetail{
+    font-size: 28px;
+    position: relative;
+    bottom: 25px;
+    right: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.otext{
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+

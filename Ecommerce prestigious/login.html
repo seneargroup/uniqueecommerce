@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script>
+      var addValues = () => {
+          var a1 = document.querySelector("#fval").value;
+          a1 = a1.trim();
+          if (a1 == "") {
+            document.querySelector(".fvalErr").style.display = "block";
+            return;
+          } else {
+            document.querySelector(".fvalErr").style.display = "none";
+          }
+
+          var a2 = document.querySelector("#sval").value;
+          a2 = a2.trim();
+          if (a2 == "") {
+            document.querySelector(".svalErr").style.display = "block";
+            return;
+          } else {
+            document.querySelector(".svalErr").style.display = "none";
+          }
+
+       
+      };
+    </script>
+  </head>
+  <body>
+    <!--Form area starts-->
+    <div class="background">
+      <div class="login">
+        <div class="title">
+          <h1>E-commerce</h1>
+        </div>
+        <div class="formbody">
+          <form
+            name="contactForm" action="./confirmation.html" method ="get">
+            <div class="inputgroup">
+              <label>Email Address:</label>
+              <input
+                type="email"
+                id="fval"
+                placeholder="Enter email address"
+              />
+              <div class="error fvalErr">Enter valid email id</div>
+            </div>
+            <div class="inputgroup">
+              <label>Password:</label>
+              <input
+                type="password"
+                id="sval"
+                placeholder="Enter your password"
+              />
+              <div class="error svalErr">Password Expected</div>
+            </div>
+            <div class="inputgroup">
+              <input type="submit" value="Login" onclick="addValues()"; />
+            </div>
+
+            <div>
+              <h6>
+                Dont have an account ? &nbsp
+                <a href=""><span>Signup Now</span></a>
+              </h6>
+            </div>
+
+            <div>
+              <p></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- form area ends -->
+  </body>
+</html>

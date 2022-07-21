@@ -1,0 +1,44 @@
+[
+    {
+      "producttitle": "realme C35",
+      "author": {
+        "priceright": "₹17,351.00",
+        "starss": "4.9"
+      }
+    },
+    {
+      "producttitle": "The Lock Artist",
+      "author": {
+        "firstName": "Steve",
+        "lastName": "Hamilton"
+      }
+    },
+    {
+      "producttitle": "HTML5",
+      "author": {
+        "firstName": "Remy",
+        "lastName": "Sharp"
+      }
+    },
+    {
+      "producttitle": "Right Ho Jeeves",
+      "author": {
+        "firstName": "P.D",
+        "lastName": "Woodhouse"
+      }
+    },
+    {
+      "producttitle": "Fallen",
+      "author": {
+        "firstName": "David",
+        "lastName": "Maine"
+      }
+    },
+    {
+      "producttitle": "Monster 1959",
+      "author": {
+        "firstName": "David",
+        "lastName": "Maine"
+      }
+    }
+  ]

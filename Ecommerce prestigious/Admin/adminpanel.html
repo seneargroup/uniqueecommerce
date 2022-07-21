@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="adminpanel.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7763eff3a0.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="shortcut icon" href="images/profile1.jpg" type="image/x-icon">
+        <title>E-commerce - Admin page</title>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    </head>
+    <body>
+       
+        <div class="container">
+
+            <div class="sidebar">
+              
+                <div class="sidebaritems">
+                    
+                    <a href="#services"><span class="material-symbols-outlined">grid_view</span> Dashboard</a>
+                    <button class="dropdown-btn"> <span class="material-symbols-outlined">shopping_cart</span> Orders
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                        <div class="dropdown-container">
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Ordered</a>
+                            <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Processed</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Received</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Returns</a>
+                        </div>
+
+                        <button class="dropdown-btn"> <span class="material-symbols-outlined">category</span> Categories
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Add Category</a>
+                            <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Products</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                        </div>
+
+
+                        <button class="dropdown-btn"> <span class="material-symbols-outlined">inventory_2</span> Products
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Add Products</a>
+                            <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Manage Products</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Products Order</a>
+                        </div>
+
+                        <button class="dropdown-btn"> <span class="material-symbols-outlined">currency_rupee</span> Payments
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Received Amount</a>
+                            <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Pending Amount</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Processing Amt</a>
+                        </div>
+
+
+                        <a href="#services"><span class="material-symbols-outlined">redeem</span> Offers</a>
+                        <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Promo code</a>
+                        <a href="#services"><span class="material-symbols-outlined">insights</span> Sales</a>
+
+                    <button class="dropdown-btn"> <span class="material-symbols-outlined">person</span> Customers
+                        <i class="fa fa-caret-down"></i>
+                     </button>
+                        <div class="dropdown-container">
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                            <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Products</a>
+                            <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                        </div>
+
+
+                    <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                 
+                    <button class="dropdown-btn"> <span class="material-symbols-outlined">shopping_cart</span> Featured sections
+                             <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                        <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Products</a>
+                        <a href="#services"><span class="material-symbols-outlined">insights</span> Services</a>
+                    </div>
+
+                    <a href="#services"><span class="material-symbols-outlined">insights</span> Return Requests</a>
+                    <a href="#services"><span class="material-symbols-outlined">inventory_2</span> Website Settings</a>
+                    <a href="#services"><span class="material-symbols-outlined">insights</span> System</a>
+
+                </div>
+
+
+            </div>
+
+            <div class="right">
+
+                <nav>
+                    <div>
+                        <a href=""><h5 class="logo-name">E-Commerce</h5></a> 
+    
+                    </div>
+    
+
+                    <div class="logo-left">
+                         <select name="select" id="selectlocation">
+                             <option value = "BS" selected >Select Your Location</option>
+                             <optgroup label="Top Cities">
+                                 <option value = "DC" >Visakhapatnam</option>
+                                 <option value = "FC" >Hyderabad</option>
+                                 <option value = "RC" >Bangalore</option>
+                                 </optgroup>
+                                 <option value = "cc">Cupcakes</option>
+                                 <option value = "vp" required>Veg Puff</option>
+                                 <option value = "ap" disabled>Anda Puff</option>
+                                 <option value = "cb">Crunchy Biscuits </option>
+                                 <option value = "cob">Chocolate Biscuits</option>
+                                 <option value = "clc">Choco Lava Cake</option>
+                                 <option value = "wb" >White Bread</option>
+                                 <option value = "bb">Brown Bread</option>
+                                 <option value = "mf">Muffin</option>
+                                 <option value = "br" >Bread Roll</option>
+                                 <option value = "bw">Brownie </option>
+                                 <option value = "ps">Pastry</option>
+                                 <option value = "vgs">Veg Grill Sandwich</option>
+                         </select>
+                     </div>
+             
+                     <div class="box">
+                         <form method="get">
+                             <input  class="sinput"  type="search" placeholder="Search for products or brands " id="search" value="" onchange="searchPage()">
+                             <input type="button" id="searchbtn" onclick="searchPage()" value="">  <i class="fa fa-search"  onclick="searchPage()" aria-hidden="true"></i>
+                                
+                         </form>
+
+                         <div class="Profile">
+
+                            <img  class="profileimg" src="images/profile1.jpg" alt="">
+    
+                        </div>
+                         
+                    </div>
+
+                </nav>
+
+                <section class="pageheading">
+
+                    <div class="Titlehead">
+                        <h6>Dashboard</h6>
+                    </div>
+
+                </section>
+
+                <section class="overview"> 
+
+                    <div class="fivecontainer">
+
+                        <div class="boxone one">
+                            <div class="imagetext">
+                                <span class="material-symbols-outlined ">shopping_cart</span>
+                                <h6 class="spantext">Orders</h6>
+                            </div>
+                            <div class="orderinf">
+
+                                <h5 class="odetail">45,990</h5>
+                                <h6 class="otext">Total for this month</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="boxone two">
+                            <div class="imagetext">
+                                <span class="material-symbols-outlined ">shopping_cart</span>
+                                <h6 class="spantext">New Users</h6>
+                            </div>
+                            <div class="orderinf">
+
+                                <h5 class="odetail">45,990</h5>
+                                <h6 class="otext">Total for this month</h6>
+                            </div>
+                        </div>
+                        <div class="boxone three">
+                            <div class="imagetext">
+                                <span class="material-symbols-outlined ">shopping_cart</span>
+                                <h6 class="spantext">Returns</h6>
+                            </div>
+                            <div class="orderinf">
+
+                                <h5 class="odetail">22,990</h5>
+                                <h6 class="otext">Total for this month</h6>
+                            </div>
+                        </div>
+                        <div class="boxone four">
+                            <div class="imagetext">
+                                <span class="material-symbols-outlined ">shopping_cart</span>
+                                <h6 class="spantext">Products</h6>
+                            </div>
+                            <div class="orderinf">
+
+                                <h5 class="odetail">45,990</h5>
+                                <h6 class="otext">Total for this month</h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+            
+            new Chart("myChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [{ 
+                  data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+                  borderColor: "red",
+                  fill: false
+                }, { 
+                  data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+                  borderColor: "green",
+                  fill: false
+                }, { 
+                  data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+                  borderColor: "blue",
+                  fill: false
+                }]
+              },
+              options: {
+                legend: {display: false}
+              }
+            });
+            </script>
+      
+        <script  src="./adminsearch.js"></script>
+        <script  src="./sidebar.js"></script>
+        <script  src="./charts.js"></script>
+   
+
+    </body>
+
+    
+</html>

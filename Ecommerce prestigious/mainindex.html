@@ -1,0 +1,3050 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="maincss.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7763eff3a0.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <script src="jquery.js"> </script>
+        <link rel="shortcut icon" href="images/profile1.jpg" type="image/x-icon">
+        <title>E-Commerce - online shopping website</title>
+    </head>
+    <body>
+    <!-- Navbar Section starts here -->
+    <nav>
+        <div class="logo-left">
+            <a href="mainindex.html"><img class="logo-name" src="images/logo.png" alt=""></a>
+           
+            <select name="select" id="selectlocation">
+                <option value = "BS" selected >Select Your Location</option>
+                <optgroup label="Top Cities">
+                    <option value = "DC" >Visakhapatnam</option>
+                    <option value = "FC" >Hyderabad</option>
+                    <option value = "RC" >Bangalore</option>
+                    </optgroup>
+                    <option value = "cc">Cupcakes</option>
+                    <option value = "vp" required>Veg Puff</option>
+                    <option value = "ap" disabled>Anda Puff</option>
+                    <option value = "cb">Crunchy Biscuits </option>
+                    <option value = "cob">Chocolate Biscuits</option>
+                    <option value = "clc">Choco Lava Cake</option>
+                    <option value = "wb" >White Bread</option>
+                    <option value = "bb">Brown Bread</option>
+                    <option value = "mf">Muffin</option>
+                    <option value = "br" >Bread Roll</option>
+                    <option value = "bw">Brownie </option>
+                    <option value = "ps">Pastry</option>
+                    <option value = "vgs">Veg Grill Sandwich</option>
+            </select>
+        </div>
+
+        <div class="box">
+         <form method="get"> 
+                <input  class="sinput"  type="search" placeholder="Search for products or brands " id="search" value="" onchange="searchPage()">
+                <input type="button" id="searchbtn" onclick="searchPage()" value="">  <i class="fa fa-search"  onclick="searchPage()" aria-hidden="true"></i>
+                <div class="autocom-box">
+                
+                  </div>
+            </form>
+           
+        </div>
+        
+        <div class="right">
+
+                <a href="./login.html"><button class="sign">Login</button></a> 
+                <a href=""><button class="sign signup" >Signup</button></a> 
+                
+                <a href="./notifications.html"><span class="material-icons noti">notifications</span></a>
+                <img class="mimg" onclick="showMenu()" src="images/whitemenu.png" alt="">
+
+                <div class="menucontainer">
+                    <div class="menulist">
+                        <img class="cimg" onclick="hideMenu()" src="images/cancel.png" alt="">
+
+                        <h6 class="sidemenuheads">Profile Details</h6>
+                        
+
+                        <div class="mlist">
+                            <a href="">My Account Details</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">My Orders Details</a> 
+                        </div>
+                        <div class="mlist">
+                           <a href="">My Wishlist</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">Returns</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">My Address</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">Wallet details</a> 
+                        </div>
+                    </div>
+
+
+                    <div class="menulist">
+
+                        <h6 class="sidemenuheads">Account Details</h6>
+                        
+                        <div class="mlist">
+                            <a href="">Language Settings</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">Account Settings</a> 
+                        </div>
+                        <div class="mlist">
+                           <a href="">Customer Service</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">Sign-in</a> 
+                        </div>
+                        <div class="mlist">
+                            <a href="">Logout from device</a> 
+                        </div>
+                    </div>
+
+                </div>
+          
+        </div> 
+        
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+
+    </nav>
+
+    <!-- Navbar Section Ends here -->
+
+    <!-- second header section starts here -->
+
+    <section class="header">
+
+        <div class="first-container">
+
+           
+            <div class="hcircle">
+             
+                <div class="circconut">
+
+                        <div class="boom">
+                            <div>
+                                <a href=""><img class="books first" src="images/allcat.webp" alt=""></a>
+                                <div class="megamenu">
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href=""><li>Mens Casual shirts</li></a>
+                                            <a href=""><li>Mens Polo T-shirts</li></a>
+                                            <a href=""><li>Mens Party Shirts</li></a>
+                                            <a href=""><li>Mens trousers</li></a>
+                                            <a href=""><li>Mens Denim Jeans</li></a>
+                                            <a href=""><li>Mens Inner wear</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href="mensproducts.html"><img class="megamenuimg" src="images/HTB1KJYuLFXXXXaZaXXXq6xXFXXXI.jpg" alt=""></a>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Women's Fashion</h3>
+                                        <ul>
+                                            <a href=""><li>Womens Kurtis </li></a>
+                                            <a href=""><li>Womens Dresses</li></a>
+                                            <a href=""><li>Womens Tops</li></a>
+                                            <a href=""><li>Womens Jeans</li></a>
+                                            <a href=""><li>Womens Sarees</li></a>
+                                            <a href=""><li>Womens Gowns</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href="womensproducts.html"><img class="megamenuimg" src="images/3-2.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Smart Mobiles</h3>
+                                        <ul>
+                                            <a href=""><li>Smart Mobiles</li></a>
+                                            <a href=""><li>Mobiles accessroies</li></a>                                                                                        
+                                            <a href=""><li>Apple I-phones</li></a>
+                                            <a href=""><li>Screen Guards</li></a>
+                                            <a href=""><li>Power Banks</li></a>
+                                            <a href=""><li>MObile Chargers</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href="subproducts.html"><img class="megamenuimg" src="images/phoneoffers3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Home Appliances</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <div>
+                                                <a href="Home.html"><img class="megamenuimg" src="images/bajaj_banner-1536x864.jpg" alt=""></a>
+                                            </div>
+                                        </ul>
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Sandals & Shoes</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a> 
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a> 
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href=""><img class="megamenuimg" src="images/sandals.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Kids categories</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href=""><img class="megamenuimg" src="images/kidfase.PNG" alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="megamenuitems">
+                                        <h3>Electronics items</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>  
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <a href=""><img class="megamenuimg" src="images/butterflyhome_.jpg" alt=""></a>
+                                        </div>
+                                       
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+                            <a href=""><h6 class="sides">All Catg</h6></a>
+
+                        </div>
+
+                        <div class="boom">
+                            <div>
+                                <a href="./mensproducts.html"> <img class="books" src="images/mens.PNG" alt=""></a>
+                                <div class="megamenu">
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>                   
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>                                      
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href=""> <li>Mens FASHION ITEMS</li></a>                                              
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>                
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>                             
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>           
+                                            <a href=""> <li>Mens FASHION ITEMS</li></a>       
+                                            <a href=""> <li>Mens FASHION ITEMS</li></a>               
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            </div>
+                          
+                                <a href="./mensproducts.html"> <h6 class="sides">Mens</h6></a>
+                        </div>
+
+
+
+                        <div class="boom">
+ 
+                            <div>
+                                <a href="./womensproducts.html"><img class="books" src="images/girl.PNG" alt=""></a>
+                                <div class="megamenu">
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+                                 <a href="./womensproducts.html"><h6 class="sides">Womens</h6></a>
+                        </div>
+
+
+
+                        <div class="boom">
+                                           
+                             <div>
+                                <a href=""><img class="books" src="images/pressurecooker2.jpg" alt=""></a>
+                                <div class="megamenu">
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                </div>
+                             </div>
+                            
+                                  <a href="./Home.html"><h6 class="sides">Home</h6></a>
+                        </div>
+
+
+
+                        <div class="boom">
+
+                            <div>
+                                <a href=""><img class="books" src="images/image7.png" alt=""></a>
+                                <div class="megamenu">
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                </div>
+                            </div>
+                            
+                                   <a href=""><h6 class="sides">Shoes</h6></a>
+                        </div>
+
+
+
+                        <div class="boom">
+
+                            <div>
+                                <a href=""><img class="books" src="images/kidcat6.png" alt=""></a>
+                                <div class="megamenu">
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                </div>
+                            </div>
+                           
+                                 <a href=""><h6 class="sides">Kids</h6></a>
+                        </div>
+
+                        <div class="boom">
+
+                            <div>
+                                <a href=""><img class="books" src="images/Laptop1.jpg" alt=""></a>
+                                <div class="megamenu">
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                        <a href="">
+                                            <li>Mens FASHION ITEMS</li>
+                                        </a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                                <a href=""><h6 class="sides">Electric</h6></a>
+                        </div>
+
+
+
+                        <div class="boom">
+                             <div>
+                                <a href=""><img class="books" src="images/R (1).png" alt=""></a>
+                                <div class="megamenu">
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                <div class="megamenuitems">
+                                    <h3>Men's Fashion</h3>
+                                    <ul>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                        <a href=""><li>Mens FASHION ITEMS</li></a>
+                                    </ul>
+                                    <div>
+                                        <img class="megamenuimg" src="images/R.jfif" alt="">
+                                    </div>
+                                
+                                </div>
+                                
+                                </div>
+                             </div>
+                            
+                                <a href="./subproducts.html"><h6 class="sides">Mobiles</h6></a>
+                               
+                        </div>
+
+
+                        
+                        <div class="boom">
+                            <div>
+                                <a href=""><img class="books prof" src="images/photo_2022-06-07_11-26-52.jpg" alt=""></a>
+                                <div class="megamenu">
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Men's Fashion</h3>
+                                        <ul>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                            <a href="">
+                                                <li>Mens FASHION ITEMS</li>
+                                            </a>
+                                        </ul>
+                                        <div>
+                                            <img class="megamenuimg" src="images/R.jfif" alt="">
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Account details</h3>
+                                        <ul>
+                                            <a href=""><li>Language settings</li></a>
+                                            <a href=""><li>Account settings</li></a>
+                                            <a href=""><li>Logout of this browser</li></a>
+                                            <a href=""><li>Mens FASHION ITEMS</li></a>
+                                            
+                                        </ul>
+                        
+                                    </div>
+                        
+                                    <div class="megamenuitems">
+                                        <h3>Profile Details</h3>
+                                        <ul>
+                                            <a href=""><li>My Account</li></a>
+                                            <a href=""><li>My Orders</li></a>
+                                            <a href=""><li>Wallet details</li></a>
+                                            <a href=""><li>Recent orders</li></a>
+                                            <a href=""><li>My Wishlist</li></a>
+                                            <a href=""><li>My Address</li></a>
+                                        </ul>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <a href="">
+                                <h6 class="sides lastchild">Profile</h6>
+                            </a>
+                            
+                        </div>
+
+                </div>
+
+   </section>
+
+<!-- second header section Ends here -->
+
+  <section class="banner-main">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                
+                    <a href=""><img class="sal" src="images/f1.PNG" style="width:100%"></a>
+                
+                </div>
+
+                <div class="mySlides fade">
+                
+                    <a href="./womensproducts.html"><img class="sal" src="images/f4.PNG" style="width:100%"></a>
+                    
+                </div>
+                
+                <div class="mySlides fade">
+                
+                    <a href=""><img class="sal" src="images/f3.PNG" style="width:100%"></a>
+                
+                </div>
+                
+                <div class="mySlides fade">
+                
+                    <a href="./mensproducts.html "><img class="sal" src="images/f2.PNG" style="width:100%"></a>
+                
+                </div>
+                
+                </div>
+
+                 <br>
+                
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>  
+
+   </section>
+
+   
+        <section class="main-offers">
+
+            
+            <div class="recommendeditems">
+               
+                <div>
+                    <a href=""><img class="recommendedoffer" src="images/bajaj_banner-1536x864.jpg"></a>
+                    <a href="Home.html"><button class="topbutton homeapp">Home Applaiances</button></a>
+                </div>
+                <div>
+                    <a href=""><img class="recommendedoffer" src="images/3-2.jpg"></a>
+                    <a href="womensproducts.html"><button class="topbutton womenfash">Women Fashion</button></a>
+                </div>
+                <div>
+                    <a href=""><img class="recommendedoffer"src="images/phoneoffers5.jpg"></a>
+                    <a href="subproducts.html"><button class="topbutton smartphone">Smart Phones</button></a>
+                </div>
+                <div>
+                    <a href=""><img class="recommendedoffer" src="images/maxresdefault (2).jpg"></a>
+                    <a href="mensproducts.html"><button class="topbutton mensfash">Mens Fashion</button></a>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+       <section class="two">
+                    
+            <div>
+                <h5 class="verysmall">All categories Products</h5> 
+                <a href=""><button class=" veryviewbutton">View All</button> </a>
+            </div>
+    
+
+            <div class="boxes">
+
+                <div>
+                        <a href=""><img class="smallcat" src="images/menscat1.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Mens Fashion</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""><img class="smallcat"  src="images/womencat4_.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Women's Fashion</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""> <img class="smallcat"  src="images/kidcat6.PNG"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Kids Fashions</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""><img class="smallcat "  src="images/Laptop1.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Electronics Items</h3></a>
+                    </div>
+                </div>
+                
+
+                
+                <div>
+                        <a href=""><img  class="smallcat " src="images/pressurecooker2.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Home Appliances</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""><img class="smallcat "  src="images/offcat.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Books & Stationary</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""><img class="smallcat "  src="images/beautycat2.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Beauty Items</h3></a>
+                    </div>
+                </div>
+                
+
+                <div>
+                        <a href=""><img class="smallcat " src="images/image22.png"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Smart Phones</h3></a>
+                    </div>
+                </div>
+
+                <div>
+                        <a href=""><img class="smallcat " src="images/oil.jpg"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Groceries Items</h3></a>
+                    </div>
+                </div>
+
+                <div>
+                        <a href=""><img class="smallcat " src="images/image7.png"></a>
+                    <div>
+                        <a href=""><h3 class="hsmall">Slippers & Shoes</h3></a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </section>
+    <br>
+
+  
+
+        <section class="backside">
+          
+            <div>
+                <h5 class="kidfive">Kids Fashion Upto 50% off</h5> 
+                <a href=""><button class="view viewsbutton">View All</button> </a>
+            </div> 
+
+            <div class="blocksthree">
+
+                <a href=""><img class="kidoffer " src="images/kid1.jpg"></a> 
+                <a href=""><img class="kidoffer " src="images/kid2.jpg"></a> 
+                <a href=""><img class="kidoffer " src="images/kid3_.jpg"></a>
+                <a href=""><img class="kidoffer " src="images/kid4_.jpg"></a> 
+                <a href=""><img class="kidoffer " src="images/kidfashion5.jpg"></a>
+                        
+            </div>
+
+        </section>
+
+        <br>
+
+            <section class="round-container">
+                <div class="headborder">
+                    <h5 class="roundfive">All wednesday deals</h5> 
+                    <h4  id="time"></h4> 
+                    <a href=""> <button class="view viewsbuttons">View All</button> </a>
+                </div> 
+
+                <div class="rounddeals">
+                    
+                        <div>
+                            <img class="roundcat" src="images/handwash.jpeg">
+                            <div>
+                                <h3 class="rsmall">Groceries</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="roundcat" src="images/kid1.jpg">
+                            <div>
+                                <h3 class="rsmall">Kids Fashion</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="roundcat" src="images/kid2.jpg">
+                            <div>
+                                <h3 class="rsmall">Clothes</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="roundcat" src="images/Pressure-Cookers.jpg">
+                            <div>
+                                <h3 class="rsmall">Home Appliances</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="roundcat" src="images/image12.png">
+                            <div>
+                                <h3 class="rsmall">Mobiles</h3>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="roundcat" src="images/image7.png">
+                            <div>
+                                <h3 class="rsmall">Shoes</h3>
+                            </div>
+                        </div>
+
+                </div>
+        
+            </section>
+                 
+            <!-- Mobile section two 2 -->
+
+                <section class="mobilessec">
+
+                        <div>
+                            <h5 class="mobilefive">Mobiles deals - Flat - 11 % Off</h5> 
+                        <button class="mviewbuttons">View All</button> 
+                        </div> 
+                        
+                        <div class="shop" id="shop">
+                        </div>
+
+                </section>
+
+                      <a href=""></a>
+
+                 <!-- Mobile section three 3 -->
+
+                <section class="mobisectwo">
+
+                        <div>
+                            <h5 class="mobileunique">Mobiles deals - Flat - 15 % Off</h5> 
+                            <button class="muviewbuttons">View All</button> 
+                        </div> 
+
+
+                        <div class="mobilesecboxes">
+
+                            <div class="squarebox">
+
+                                <a href=""><img class="mobosectwo" src="images/R (1).png" alt=""></a>
+                                <h4 class="insideright">Apple -I-phone -Gold -5g</h4>
+                                <h6 class="mrpright"><s>₹79,900.00</s> (15% off)</h6>
+                                <h2 class="pricemobright">₹67,915.00</h2>
+                                <div class="offroundtag">
+                                    <h6 class="offtxt">OFF</h6>
+                                    <h4 class="offtxtdown">25%</h4>
+                                </div>
+                                <a href=""><button class="insidecartdown">Add to Cart</button></a>
+
+                            </div>
+
+                            <div class="squarebox">
+
+                                <a href=""><img class="mobosectwo" src="images/r.png" alt=""></a>
+                                <h4 class="insideright">Apple -I-phone -Black -5g</h4>
+                                <h6 class="mrpright"><s>₹79,900.00</s> (15% off)</h6>
+                                <h2 class="pricemobright">₹67,915.00</h2>
+                                <div class="offroundtag">
+                                    <h6 class="offtxt">OFF</h6>
+                                    <h4 class="offtxtdown">25%</h4>
+                                </div>
+                                <a href=""><button class="insidecartdown">Add to Cart</button></a>
+
+                            </div>
+
+                            <div class="squarebox">
+
+                                <a href=""><img class="mobosectwo" src="images/image12.png" alt=""></a>
+                                <h4 class="insideright">Oppo-A5-Pro -Black -5g</h4>
+                                <h6 class="mrpright"><s>₹29,900.00</s>  (15% off)</h6>
+                                <h2 class="pricemobright">₹25,415.00</h2>
+                                <div class="offroundtag">
+                                    <h6 class="offtxt">OFF</h6>
+                                    <h4 class="offtxtdown">25%</h4>
+                                </div>
+                                <a href=""><button class="insidecartdown">Add to Cart</button></a>
+
+                            </div>
+
+                            <div class="squarebox">
+
+                                <a href=""><img class="mobosectwo" src="images/redmi-k20-transparent_0.png" alt=""></a>
+                                <h4 class="insideright">Redmi-K10-Pro -Black -5g</h4>
+                                <h6 class="mrpright"><s>₹29,900.00</s> (15% off)</h6>
+                                <h2 class="pricemobright">₹25,415.00</h2>
+                                <div class="offroundtag">
+                                    <h6 class="offtxt">OFF</h6>
+                                    <h4 class="offtxtdown">25%</h4>
+                                </div>
+                                <a href=""><button class="insidecartdown">Add to Cart</button></a>
+
+                            </div>
+
+                            <div class="squarebox">
+
+                                <a href=""><img class="mobosectwo" src="images/starhub-store-apple-iphone-8-plus-gold-back.png" alt=""></a>
+                                <h4 class="insideright">Redmi mobile -Black -5g</h4>
+                                <h6 class="mrpright"><s>₹79,900.00</s> (15% off)</h6>
+                                <h2 class="pricemobright">₹11,999.00</h2>
+                                <div class="offroundtag">
+                                    <h6 class="offtxt">OFF</h6>
+                                    <h4 class="offtxtdown">25%</h4>
+                                </div>
+                                <a href=""><button class="insidecartdown">Add to Cart</button></a>
+                                
+                            </div>
+
+                        </div>
+
+                </section>
+
+                 <!-- Horizontal scroll products section  STARTS HERE-->
+
+                <section class="horizontalscroll">
+
+                    <div>
+                        <h5 class="mobileunique">Monthly deals - Upto - 40 % Off</h5> 
+                        <button class="muviewbuttons">View All</button> 
+                    </div>
+
+                    <div class="scrollmenu">
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/mixture1.jpg"></a>
+                            <div>
+                        
+                                <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                    <br>with No Cost EMI & <br> Additional Exchange Offers
+                                </p></a>
+                                
+                                <h4 class="horh4"><s>₹79,900.00 </s> &nbsp (11% off)</h5>
+                                    <h2 class="starsflex">&#9733;</h2>
+                                    <h2 class="starsflex">&#9733;</h2>
+                                    <h2 class="starsflex">&#9733;</h2>
+                                    <h2 class="starsflex">&#9733;</h2>
+                                    <h2 class="starsflex">&#9734;</h2>
+                                    <span id="starsss">4.9</span> </a>
+                                <h2 class="pricehor">₹11,999.00</h2>
+                            </div>
+                        
+                                <a href=""><button class="horcartdown">Add to Cart</button></a>
+
+                        </div>
+
+                        <div>
+                                <a href="#home"><img class="horimg" src="images/item2.jpg"></a>
+                            <div>
+                                <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                    <br>with No Cost EMI & <br> Additional Exchange Offers
+                                </p></a>
+                                <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                    <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                                <h2 class="pricehor">₹11,999.00</h2>
+                            </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/item3.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s> ₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/item4.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s> ₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/item5.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s> ₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/item6.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                            <a href="#home"><img class="horimg" src="images/item7.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                            <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                        <a href="#home"><img class="horimg" src="images/item8.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                        <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                        <a href="#home"><img class="horimg" src="images/item9.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                        <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                        <a href="#home"><img class="horimg" src="images/item10.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                        <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                        <a href="#home"><img class="horimg" src="images/item11.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                        <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+
+                        <div>
+                        <a href="#home"><img class="horimg" src="images/item12.jpg"></a>
+                        <div>
+                            <a href=""><p class="horh5">Oppo A54 (Starry Blue,<br> 4GB RAM,  64GB Storage) 
+                                <br>with No Cost EMI & <br> Additional Exchange Offers
+                            </p></a>
+                            <h4 class="horh4"><s>₹79,900.00</s> &nbsp (11% off)</h5>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9733;</h2>
+                                <h2 class="starsflex">&#9734;</h2>
+                                <span id="starsss">4.9</span> </a>
+                            <h2 class="pricehor">₹11,999.00</h2>
+                        </div>
+                        <a href=""><button class="horcartdown">Add to Cart</button></a>
+                        </div>
+                    
+                    </div>
+
+                </section>
+                 <!-- Horizontal scroll products section  ENDS HERE-->
+
+             <!-- Grocery banner section starts here -->
+
+            <section class="grocerybanner">
+
+                <div class="bigbanner">
+                    <img src="images/grocerybanner.jpg" alt="">
+                    
+                </div>
+                <div class="bannerbox">
+
+                    <div class="gban">
+                    <a href=""><img class="bansubimg"  src="images/oil.jpg" alt=""></a>
+                        <a class="groceryname" href="">Fortune sunflower oil</a>
+                        <h4 class="discountgrocery"><s>₹2,500.00</s> &nbsp (11% off)</h5>
+                        <h2 class="pricegrocery">₹1,599.00</h2>
+                        <h6 class="bottomoffer">15% Off</h6>
+                    </div>
+                    <div class="gban">
+                        <a href=""><img class="bansubimg"  src="images/glucon-d.jpg" alt=""></a>
+                        <a class="groceryname" href="">Glucon-D - Combos</a>
+                        <h4 class="discountgrocery"><s> ₹350.00</s> &nbsp (5% off)</h5>
+                        <h2 class="pricegrocery">₹332.05</h2>
+                        <h6 class="bottomoffer">5% Off</h6>
+                    </div>
+                    <div class="gban">
+                        <a href=""><img class="bansubimg"  src="images/tatasalt.jpg" alt=""></a>
+                        <a class="groceryname" href="">Tata Salt pro - salts</a>
+                        <h4 class="discountgrocery"><s>₹20.00</s> &nbsp (6% off)</h5>
+                        <h2 class="pricegrocery">₹18.08.00</h2>
+                        <h6 class="bottomoffer">6% Off</h6>
+                    </div>
+                    <div class="gban">
+                        <a href=""><img class="bansubimg"  src="images/oreo.jpg" alt=""></a>
+                        <a class="groceryname" href="">Oreo - Biscuites 10</a>
+                        <h4 class="discountgrocery"><s>₹250.00</s> &nbsp (5% off)</h5>
+                        <h2 class="pricegrocery">₹237.05</h2>
+                        <h6 class="bottomoffer">5% Off</h6>
+                </div>
+                    <div class="gban">
+                        <a href=""><img class="bansubimg"  src="images/honey.jpg" alt=""></a>
+                        <a class="groceryname" href="">Natural Honey Pure</a>
+                        <h4 class="discountgrocery"><s>₹500.00</s> &nbsp (6% off)</h5>
+                        <h2 class="pricegrocery">₹470.00</h2>
+                        <h6 class="bottomoffer">6% Off</h6>
+                </div>
+                    
+            </div>
+            
+            </section>
+            <!-- Grocery banner section ends here -->
+
+            <!-- Grid section1 starts here -->
+
+            <section class="gridsec">
+                
+                <div>
+                    <h5 class="mobileunique">All Today Great deals - Flat - 40 % Off</h5> 
+                    <button class="muviewbuttons">View All</button> 
+                </div>
+                
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/desktop.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/mixer.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/saree.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>  
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/tshirt1.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/slipeer.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/pressurecooker2.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>  
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/R.png" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/stove1.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/watch.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/wheyprotein.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/women3.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                        <div class="grid-item">
+                            <a href=""><img class="gridimg"  src="images/tv.jpg" alt=""></a>
+                            <a class="gridname" href="">Fortune sunflower oil</a>
+                            <h4 class="griddiscount"><s> M.R.P: ₹2,500.00</s> &nbsp (11% off)</h5>
+                            <h2 class="gridprice">₹1,599.00</h2>
+                            <h6 class="gridbottomoffer">15% Off</h6>
+                        </div>
+                    </div>
+
+            </section>
+            
+            <!-- Grid section1 Ends here -->
+            
+
+            
+            <!-- Movie section starts here -->
+            
+            <section class="movie">
+                    <div>
+                    <h5 class="movietext">All Today Movie offers - Flat - 40 % Off</h5> 
+                    <button class="movieview">View All</button>
+                    </div>
+                <div class="movieflex">
+                    <div class="moviecontainer">
+                        <div class="bg-img1"></div>
+                        <div class="content">
+                            <div class="box-one">
+                                <div>
+                                    <h4 class="text">Squid Game</h4>
+                                    <p class="sub-text tt">2021  Drama   1 season</p>
+                                </div>
+                                <div>
+                                    <h4 class="text" id="txt">IMDb</h4>
+                                    <p class="sub-text">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star sub-texts" aria-hidden="true"></i>
+                                        <span>8.1</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-two">
+                                <h4 class="text">Cast</h4>
+                                <p class="sub-text">Lee Jung-jae , Park Hae-soo , Wi Ha-joon 
+                                    HoYeon Jung , O Yeong-su , Heo Sung-tae  Anupam Tripathi
+                                    Kim Joo-ryoung , Lee Ji-ha  Gong Yoo , Lee Yoo-mi </p>
+                                    <a href=""><button>Buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moviecontainer">
+                        <div class="bg-img2"></div>
+                        <div class="content">
+                            <div class="box-one">
+                                <div>
+                                    <h4 class="text">Sahoo</h4>
+                                    <p class="sub-text">2021  Drama   1 season</p>
+                                </div>
+                                <div>
+                                    <h4 class="text" id="txt">IMDb</h4>
+                                    <p class="sub-text">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star sub-texts" aria-hidden="true"></i>
+                                        <span>9.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-two">
+                                <h4 class="text">Cast</h4>
+                                <p class="sub-text">Lee Jung-jae , Park Hae-soo , Wi Ha-joon 
+                                    HoYeon Jung , O Yeong-su , Heo Sung-tae  Anupam Tripathi
+                                    Kim Joo-ryoung , Lee Ji-ha  Gong Yoo , Lee Yoo-mi </p>
+                                    <a href=""><button>Buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moviecontainer">
+                        <div class="bg-img3"></div>
+                        <div class="content">
+                            <div class="box-one">
+                                <div>
+                                    <h4 class="text">Surya bhai</h4>
+                                    <p class="sub-text">2021  Drama   1 season</p>
+                                </div>
+                                <div>
+                                    <h4 class="text" id="txt">IMDb</h4>
+                                    <p class="sub-text">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star sub-texts" aria-hidden="true"></i>
+                                        <span>8.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-two">
+                                <h4 class="text">Cast</h4>
+                                <p class="sub-text">Lee Jung-jae , Park Hae-soo , Wi Ha-joon 
+                                    HoYeon Jung , O Yeong-su , Heo Sung-tae  Anupam Tripathi
+                                    Kim Joo-ryoung , Lee Ji-ha  Gong Yoo , Lee Yoo-mi </p>
+                                    <a href=""><button>Buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moviecontainer">
+                        <div class="bg-img4"></div>
+                        <div class="content">
+                            <div class="box-one">
+                                <div>
+                                    <h4 class="text">The Man</h4>
+                                    <p class="sub-text">2021  Drama   1 season</p>
+                                </div>
+                                <div>
+                                    <h4 class="text" id="txt">IMDb</h4>
+                                    <p class="sub-text">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star sub-texts" aria-hidden="true"></i>
+                                        <span>7.9</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-two">
+                                <h4 class="text">Cast</h4>
+                                <p class="sub-text">Lee Jung-jae , Park Hae-soo , Wi Ha-joon 
+                                    HoYeon Jung , O Yeong-su , Heo Sung-tae  Anupam Tripathi
+                                    Kim Joo-ryoung , Lee Ji-ha  Gong Yoo , Lee Yoo-mi </p>
+                                <a href=""><button>Buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </section>
+            <!-- Movie section Ends here -->
+
+            <!-- Best deals section -->
+
+            <section class="twocirc">
+                <div>
+                    <h6 class="tcirchead">Best Deals ever</h6>
+                </div>
+
+                <div class="circconut">
+
+                    <div class="boo">
+                        <a href=""><img class="book" src="images/shoe2.png" alt=""></a>
+                        <div>
+                            <h6 class="side">Shoes @</h6>
+                            <h4 class="side2">10 % Off</h4>
+                            <h3 class="side3">Starts from ₹1,599.00 </h3>
+                        </div>
+                    </div>
+
+                    <div class="boo">
+                        <a href=""><img class="book" src="images/mencat22_.jpg" alt=""></a>
+                        <div>
+                            <h6 class="side">T-shirts @</h6>
+                            <h4 class="side2">10 % Off</h4>
+                            <h3 class="side3">Starts from ₹499.00 </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="boo">
+                        <a href=""><img class="book" src="images/image12.png" alt=""></a>
+                        <div>
+                            <h6 class="side">Mobiles</h6>
+                            <h4 class="side2">10 % Off</h4>
+                            <h3 class="side3">Starts from ₹10,599.00</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="boo">
+                        <a href=""><img class="book" src="images/Laptop1.jpg" alt=""></a>
+                        <div>
+                            <h6 class="side">Laptops @</h6>
+                            <h4 class="side2">10 % Off</h4>
+                            <h3 class="side3">Starts from ₹40,599.00</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="boo">
+                        <a href=""><img class="book" src="images/image15.png" alt=""></a>
+                        <div>
+                            <h6 class="side">Watches @</h6>
+                            <h4 class="side2">10 % Off</h4>
+                            <h3 class="side3">Starts from ₹599.00</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- offer section 2 -->
+
+            <section class="prodiff">
+
+                    <div class="prodiffone">
+                        <a href=""><img class="bigleft" src="images/Flipkart-Banner-Desktop_1__k0wrqi.jpg" alt=""></a>
+                    </div>
+                    <div class="prodiffone">
+                        <a href=""><img class="smallright" src="images/shoeoffer.webp" alt=""></a>
+                    </div>
+                    <div class="prodiffone">
+                        <a href=""><img class="smallright" src="images/2.webp" alt=""></a>
+                    </div>
+
+            </section>
+
+            <div><hr class="down"></div>
+
+             <!-- Horizontal scroll section 2 -->
+
+            <section class="horizontalscrolls">
+
+                <div>
+                    <h5 class="mobilefives">All Mobiles deals - Flat - 11 % Off</h5> 
+                <button class="mviewbuttonss">View All</button> 
+                </div> 
+
+                <div class="scrollmenus">
+                    
+                    <div class="mobileboxess">
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/mob-removebg-preview.png" alt=""></a>
+                            <h4 class="insidee">Redmi-10 -Black -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹25,900.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹23,051.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/image12.png" alt=""></a>
+                            <h4 class="insidee">Oppo -A5-Pro -Blue -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹19,500.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹17,351.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/mob-removebg-preview.png" alt=""></a>
+                            <h4 class="insidee">Redmi-10 -Green -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹25,900.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹23,051.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/R (1).png" alt=""></a>
+                            <h4 class="insidee">Apple - I-phone -Gold -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹79,900.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹71,111.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/mobil2.png" alt=""></a>
+                            <h4 class="insidee">Redmi mobile -Black -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹23,400.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹20,826.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/image22.png" alt=""></a>
+                            <h4 class="insidee">Oppo-A5-Pro -Black -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹19,500.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹17,351.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/R (1).png" alt=""></a>
+                            <h4 class="insidee">Apple - I-phone -Gold -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹79,900.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹71,111.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/mobil2.png" alt=""></a>
+                            <h4 class="insidee">Redmi mobile -Black -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹23,400.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹20,826.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                
+                        <div class="mbb">
+                            <a href=""><img class="moboo" src="images/image22.png" alt=""></a>
+                            <h4 class="insidee">Oppo-A5-Pro -Black -5g</h4>
+                            <a href="#"><h3 class="compe">Compare +</h3></a>
+                            <h6 class="mrps"><s>₹19,500.00</s> &nbsp (11% off)</h6>
+                            <h2 class="pricemobo">₹17,351.00</h2>
+                            <a href=""><button class="insidecarts">Add to Cart</button></a>
+                        </div>
+                    
+                
+                    </div>
+                    
+                
+                
+                </div>
+
+            </section>
+              
+             <!-- Kids Fashion area Section -->
+
+            <section class="fashion">
+
+                <div>
+                    <h5 class="fashionhead">Groceries Deals Upto 50% off</h5>
+                    <a href="groceries.html"><button class="view viewsbutton">View All</button> </a>
+                </div>
+
+                <div class="fashionitems">
+
+                    <a href=""><img class="fashionoffer" src="images/Food_grain_oils__masalas_.jpg"></a>
+                    <a href=""><img class="fashionoffer" src="images/Fruits__veg.jpg"></a>
+                    <a href=""><img class="fashionoffer"src="images/Health__hygiene_.jpg"></a>
+                    <a href=""><img class="fashionoffer" src="images/Snacks__packaged_foods.jpg"></a>
+                    <a href=""><img class="fashionoffer"src="images/Meatseafood_.jpg"></a>
+                    
+                </div>
+
+            </section>
+
+            <section class="bookscontainer">
+
+                <div>
+                    <h5 class="fashionhead">Books Deals Upto 50% off</h5>
+                    <a href="groceries.html"><button class="view viewsbutton">View All</button> </a>
+                </div>
+
+                <div class="booksshow">
+
+                    <a href=""><img class="bookimages" src="images/book5_.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/book4_.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/book2_.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/book7_.jpg" alt=""></a> 
+                    <a href=""><img class="bookimages" src="images/book9.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/books1_.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/book8_.jpg" alt=""></a>
+                    <a href=""><img class="bookimages" src="images/book3_.jpg" alt=""></a>
+
+                </div>
+
+
+            </section>
+
+            <!-- mens fashion sec starts -->
+
+            <section class="menfashion">
+
+                <div>
+                    <h5 class="fashionhead">Mens Fashion Upto 50% off</h5>
+                    <a href="groceries.html"><button class="view viewsbutton">View All</button> </a>
+                </div>
+
+               
+                  <div class="mfcontainer">
+                        <a href=""><img class="menimg" src="images/1.webp" alt=""></a>
+                        <a href=""><img class="menimg" src="images/2.webp" alt=""></a>
+                        <a href=""><img class="menimg" src="images/3.webp" alt=""></a>
+                        <a href=""><img class="menimg" src="images/4p.jpg" alt=""></a>
+                        <a href=""><img class="menimg" src="images/5..webp" alt=""></a>
+                  </div>
+
+            </section>
+
+            <!-- mens fashion sec ends-->
+
+             <section class="bottomlast">
+                
+                    <a href="./login.html"><button class="bottomsign">Sign here</button></a>
+
+                  <div class="botdiv">
+                    <h6 class="botsin">or <a href="./login.html">Sign up</a>  to your account</h6>              
+                  </div>
+
+             </section>
+           
+         
+            <!-- footer section starts here -->
+    
+            <footer>
+                <div class="firstblockmain">
+                    <h5 class="firstfooter text">Payelancer</h5>
+                    <a href="./login.html"><button class="sbutton">Login</button></a>
+                    <a href="./login.html"><button class="sbutton">SignUp</button></a>
+                
+                </div>
+                
+                
+
+                <div class="threecoldetails">
+                    <div class="col">
+                        <h6 class="colhead">Contact us</h6>
+                        <div class="footinf"><a href="">About Us</a></div>
+                        <div class="footinf"><a href="">Corporate office</a></div>
+                        <div class="footinf"><a href="">Privacy policy</a></div>
+                        <div class="footinf"><a href="">Contact</a></div>
+                        <div class="footinf"><a href="">Business Enquires</a></div>
+                        <div class="footinf"><a href="">Press Releases</a></div>
+                    </div>
+
+                    <div class="col">
+                        <h6 class="colhead">Connect with Us</h6>
+                        <div class="footinf"><a href="">Facebook</a></div>
+                        <div class="footinf"><a href="">Instagram</a></div>
+                        <div class="footinf"><a href="">Twitter</a></div>
+                        <div class="footinf"><a href="">Linkedin</a></div>
+                        <div class="footinf"><a href="">About Us</a></div>
+                    
+                    </div>
+
+                    <div class="col">
+                        <h6 class="colhead">Earn Money with Us</h6>
+                        <div class="footinf"><a href="">Sell with Us</a></div>
+                        <div class="footinf"><a href="">Affiliate with us</a></div>
+                        <div class="footinf"><a href="">Refer us</a></div>
+                        <div class="footinf"><a href="">Advertise with Us</a></div>
+                        <div class="footinf"><a href="">Create Website</a></div>
+                        <div class="footinf"><a href="">Franchise</a></div>
+                    </div>
+
+                    <div class="col">
+                        <h6 class="colhead">Other Information</h6>
+                        <div class="footinf"><a href="">Returns</a></div>
+                        <div class="footinf"><a href="">Your Account</a></div>
+                        <div class="footinf"><a href="">App Download</a></div>
+                        <div class="footinf"><a href="">Global</a></div>
+                        <div class="footinf"><a href="">Local</a></div>
+                        <div class="footinf"><a href="">Help</a></div>
+                    </div>
+
+                </div>
+
+                <div class="footbottom">
+                
+                    <div class="botinf"><a href="">Visakhapatnam</a></div>
+                    <div class="botinf"><a href="">Hyderabad</a></div>
+                    <div class="botinf"><a href="">Bangalore</a></div>
+                    <div class="botinf"><a href="">Delhi</a></div>
+                    <div class="botinf"><a href="">calcutta</a></div>
+                    <div class="botinf"><a href="">Pune</a></div>
+                    <div class="botinf"><a href="">Chennai</a></div>
+                    <div class="botinf"><a href="">Gujarat</a></div>
+                    <div class="botinf"><a href="">Orissa</a></div>
+                    <div class="botinf"><a href="">UP</a></div>
+                    <div class="botinf"><a href="">Mumbai</a></div>
+                    <div class="botinf"><a href="">Other information</a></div>
+
+                    <div class="fotterbotmiddle">
+                            <img class="logotext" src="images/bottomlogo.png" alt="">
+                    </div>
+                        
+                </div>
+
+                <div class="underbottom">
+                
+                    <div class="underbotinf">
+                        <a href="">All rights reserved &copy; - 2022 -2023 _ Payelancer </a>
+                    </div>
+                
+                </div>
+
+            </footer>
+            <!-- footer section Ends here -->
+    
+</body>
+
+<!-- Scripts section starts -->
+
+<script>
+    let slideIndex = 0;
+       showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+</script>
+
+
+<script>
+    var showMenu = () => {
+        $(".menucontainer").slideToggle() ;
+    }
+    var hideMenu = () => {
+        $(".menucontainer").hide() ;
+    }
+</script>
+
+
+
+<script  src="./search.js"></script>
+<script src="/Data.js"></script>
+<script src="/main.js"></script>
+<script src="/suggestions.js"></script>
+<script src="/script.js"></script>
+<script  src="./countdowntimer.js"></script>
+<!-- Scripts section Ends -->
+
+</html>
